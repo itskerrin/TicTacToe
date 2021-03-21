@@ -9,25 +9,30 @@ body {
   display: flex;
   justify-content: center;
   color: #1a1919;
+  background: #264653;
 }
 
 .container {
   margin: 50px;
   padding: 50px;
-  background-color: blueviolet;
+  background-color: #279185;
   border-radius: 25px;
 }
 
 .title {
   text-align: center;
+  text-transform: uppercase;
+  padding: 13px;
 }
 
 .status-reset-btn {
   display: flex;
-  justify-content: space-around; /* change later to look better */
+  justify-content: space-between;
+  padding: 0px 25px;
   margin-top: 25px;
-  font-size: 25px;
+  font-size: 22px;
   height: 30px;
+  text-transform: uppercase;
 }
 
 .status span {
@@ -39,11 +44,11 @@ body {
 }
 
 .reset:hover {
-  color: cornsilk;
+  color: #264653;
 }
 
 .game-grid {
-  background: #0da192;
+  background: #279185;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -57,7 +62,7 @@ body {
   align-items: center;
   height: 200px;
   width: 200px;
-  background: blueviolet;
+  background: #f4a261;
   cursor: pointer;
 }
 
@@ -68,13 +73,14 @@ body {
 
 .x::after {
   content: '✕';
-  font-size: 120px;
+  font-size: 100px;
 }
 
 .o::after {
   content: '○';
-  color: blanchedalmond;
-  font-size: 200px;
+  padding-bottom: 12px;
+  color: #f5e2b8;
+  font-size: 210px;
 }
 
 /* ---------------------------------------- */
@@ -90,7 +96,7 @@ body {
   }
 
   .x::after {
-    font-size: 150px;
+    font-size: 100px;
   }
 
   .o::after {

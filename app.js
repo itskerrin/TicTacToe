@@ -68,7 +68,7 @@ const checkGameStatus = () => {
     if (playerX) {
       status.innerHTML = `${x}'s turn`;
     } else {
-      status.innerHTML = `<span>${o}'s turn</span>`;
+      status.innerHTML = `<span>O's turn</span>`;
     }
   }
 };
