@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  color: #1a1919;
+}
+
+.container {
+  margin: 50px;
+  padding: 50px;
+  background-color: blueviolet;
+  border-radius: 25px;
+}
+
+.title {
+  text-align: center;
+}
+
+.status-reset-btn {
+  display: flex;
+  justify-content: space-around; /* change later to look better */
+  margin-top: 25px;
+  font-size: 25px;
+  height: 30px;
+}
+
+.status span {
+  color: blanchedalmond;
+}
+
+.reset {
+  cursor: pointer;
+}
+
+.reset:hover {
+  color: cornsilk;
+}
+
+.game-grid {
+  background: #0da192;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.grid-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  background: blueviolet;
+  cursor: pointer;
+}
+
+.x,
+.o {
+  cursor: auto;
+}
+
+.x::after {
+  content: '✕';
+  font-size: 120px;
+}
+
+.o::after {
+  content: '○';
+  color: blanchedalmond;
+  font-size: 200px;
+}
+
+/* ---------------------------------------- */
+
+@media only screen and (max-width: 1024px) {
+  .game-grid {
+    margin-top: 25px;
+    gap: 10px;
+  }
+  .grid-cell {
+    height: 150px;
+    width: 150px;
+  }
+
+  .x::after {
+    font-size: 150px;
+  }
+
+  .o::after {
+    font-size: 175px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .container {
+    margin: 25px;
+    padding: 25px;
+  }
+
+  .grid-cell {
+    height: 100px;
+    width: 100px;
+  }
+
+  .x::after {
+    font-size: 100px;
+  }
+
+  .o::after {
+    font-size: 125px;
+  }
+}
